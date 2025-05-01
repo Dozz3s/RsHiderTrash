@@ -1,0 +1,17 @@
+name: RsHiderTrash
+version: 1.0-BETA
+main: com.dozz3s.rshidertrash.RsHiderTrash
+api-version: 1.13
+authors:
+  - dozz3s
+description: Плагин для скрытия мусора в чате
+commands:
+  rshidertrash:
+    description: Команда перезагрузки плуга
+    usage: /rshidertrash reload
+    permission: rshidertrash.reload
+    permission-message: "У вас нет прав на использование этой команды!"
+permissions:
+  rshidertrash.reload:
+    description: Позволяет перезагружать конфигурацию плагина
+    default: op
