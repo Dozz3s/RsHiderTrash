@@ -1,0 +1,17 @@
+name: RsHiderTrash
+version: 1.1-BETA
+main: com.dozz3s.rshidertrash.Main
+api-version: 1.13
+authors:
+  - Dozz3s
+commands:
+  rshidertrash:
+    usage: /rshidertrash <reload|addword|removeword|listwords>
+    permission: rshidertrash.use
+permissions:
+  rshidertrash.use:
+    default: op
+  rshidertrash.reload:
+    default: op
+  rshidertrash.admin:
+    default: op

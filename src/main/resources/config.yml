@@ -1,0 +1,36 @@
+case-sensitive: false
+max_special_symbols: 5
+
+block-phrases:
+  enabled: true
+  disabled-worlds: []
+  block_message: false
+  message_to_player_enabled: false
+  message_to_player: "&cВ вашем сообщении была найдена запрещенная фраза"
+
+block-regex:
+  enabled: true
+  disabled-worlds: []
+  block_message: true
+  message_to_player_enabled: true
+  message_to_player: "&cВаше сообщение содержит запрещенный формат текста"
+  list:
+    - "(http|https)://[^\\s]+"  # URL
+    - "\\d{10,}"                # Длинные числа (телефоны)
+    - "[а-яА-Я]{20,}"           # Длинные русские тексты (спам)
+
+hide-join:
+  enabled: true
+  disabled-worlds: []
+
+hide-quit:
+  enabled: true
+  disabled-worlds: []
+
+hide-death:
+  enabled: true
+  disabled-worlds: []
+
+hide-kick:
+  enabled: true
+  disabled-worlds: []
