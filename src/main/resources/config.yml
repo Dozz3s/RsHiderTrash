@@ -1,0 +1,48 @@
+case-sensitive: false
+max_special_symbols: 5
+
+block-phrases:
+  enabled: true
+  disabled-worlds: []
+  block_message: true
+  message_to_player_enabled: true
+  message_to_player: "&cВ вашем сообщении была найдена запрещенная фраза"
+
+block-regex:
+  enabled: true
+  disabled-worlds: []
+  block_message: true
+  message_to_player_enabled: true
+  message_to_player: "&cВаше сообщение содержит запрещенный формат текста"
+  filters:
+    urls:
+      enabled: true
+      pattern: "(http|https)://[^\\s]+"
+    phones:
+      enabled: true
+      pattern: "\\d{10,}"
+    spam-text:
+      enabled: true
+      pattern: "[а-яА-Я]{250,}"
+    domains:
+      enabled: true
+      pattern: "\\b(?:[a-z0-9]+(?:\\-[a-z0-9]+)*\\.)+[a-z]{2,}\\b"
+    obscene:
+      enabled: true
+      pattern: "(?iu)\\b(?:(?:(?:у|[нз]а|(?:хитро|не)?вз?[ыьъ]|с[ьъ]|(?:и|ра)[зс]ъ?|(?:о[тб]|п[оа]д)[ьъ]?|(?:.\\B)+?[оаеи-])-?)?(?:[её](?:б(?!о[рй]|рач)|п[уа](?:ц|тс))|и[пб][ае][тцд][ьъ]).*?|(?:(?:н[иеа]|(?:ра|и)[зс]|[зд]?[ао](?:т|дн[оа])?|с(?:м[еи])?|а[пб]ч|в[ъы]?|пр[еи])-?)?ху(?:[яйиеёю]|л+и(?!ган)).*?|бл(?:[эя]|еа?)(?:[дт][ьъ]?)?|\\S*?(?:п(?:[иеё]зд|ид[аое]?р|ед(?:р(?!о)|[аое]р|ик)|охую)|бля(?:[дбц]|тс)|[ое]ху[яйиеё]|хуйн).*?|(?:о[тб]?|про|на|вы)?м(?:анд(?:[ауеыи](?:л(?:и[сзщ])?[ауеиы])?|ой|[ао]в.*?|юк(?:ов|[ауи])?|е[нт]ь|ища)|уд(?:[яаиое].+?|е?н(?:[ьюия]|ей))|[ао]л[ао]ф[ьъ](?:[яиюе]|[еёо]й))|елд[ауые].*?|ля[тд]ь|(?:[нз]а|по)х)\\b"
+
+hide-join:
+  enabled: true
+  disabled-worlds: []
+
+hide-quit:
+  enabled: true
+  disabled-worlds: []
+
+hide-death:
+  enabled: true
+  disabled-worlds: []
+
+hide-kick:
+  enabled: true
+  disabled-worlds: []
